@@ -1,0 +1,211 @@
+[debug] [2021-01-18T12:49:37.899Z] ----------------------------------------------------------------------
+[debug] [2021-01-18T12:49:37.901Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Tejaswi\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js functions:shell
+[debug] [2021-01-18T12:49:37.901Z] CLI Version:   9.2.1
+[debug] [2021-01-18T12:49:37.901Z] Platform:      win32
+[debug] [2021-01-18T12:49:37.901Z] Node Version:  v14.15.3
+[debug] [2021-01-18T12:49:37.902Z] Time:          Mon Jan 18 2021 18:19:37 GMT+0530 (India Standard Time)
+[debug] [2021-01-18T12:49:37.902Z] ----------------------------------------------------------------------
+[debug] [2021-01-18T12:49:37.902Z] 
+[debug] [2021-01-18T12:49:37.909Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-01-18T12:49:37.909Z] > authorizing via signed-in user
+[debug] [2021-01-18T12:49:37.909Z] [iam] checking project my-app-develop for permissions ["firebase.projects.get"]
+[debug] [2021-01-18T12:49:37.912Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/my-app-develop:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2021-01-18T12:49:59.179Z] [iam] error while checking permissions, command may fail: FirebaseError: Server Error. connect ETIMEDOUT 216.58.196.202:443
+[warn] !  Your requested "node" version "12" doesn't match your global version "14" {"metadata":{"emulator":{"name":"functions"},"message":"Your requested \"node\" version \"12\" doesn't match your global version \"14\""}}
+[debug] [2021-01-18T12:49:59.207Z] defaultcredentials: writing to file C:\Users\Tejaswi\AppData\Roaming\firebase\2018ucs0090_iitjammu_ac.in_application_default_credentials.json
+[debug] [2021-01-18T12:49:59.208Z] DEBUG: Setting GAC to C:\Users\Tejaswi\AppData\Roaming\firebase\2018ucs0090_iitjammu_ac.in_application_default_credentials.json
+[debug] [2021-01-18T12:49:59.209Z] > refreshing access token with scopes: []
+[debug] [2021-01-18T12:49:59.210Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-01-18T12:50:20.349Z] Failed to get Admin SDK config for my-app-develop, falling back to cache Failed to get Admin SDK for Firebase project my-app-develop. Please make sure the project exists and your account has permission to access it. {"name":"FirebaseError","children":[],"exit":2,"message":"Failed to get Admin SDK for Firebase project my-app-develop. Please make sure the project exists and your account has permission to access it.","original":{"name":"FirebaseError","children":[],"exit":1,"message":"Authentication Error: Your credentials are no longer valid. Please run \u001b[1mfirebase login --reauth\u001b[22m\n\nFor CI servers and headless environments, generate a new token with \u001b[1mfirebase login:ci\u001b[22m","status":500},"status":500}
+[warn] !  functions: Unable to fetch project Admin SDK configuration, Admin SDK behavior in Cloud Functions emulator may be incorrect. {"metadata":{"emulator":{"name":"functions"},"message":"Unable to fetch project Admin SDK configuration, Admin SDK behavior in Cloud Functions emulator may be incorrect."}}
+[debug] [2021-01-18T12:50:20.383Z] [functions] Watching "C:\Users\Tejaswi\Desktop\Amazon-Clone\functions" for Cloud Functions...
+[debug] [2021-01-18T12:50:20.450Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2021-01-18T12:50:20.451Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2021-01-18T12:50:20.451Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2021-01-18T12:50:20.451Z] DEBUG: [worker-~diagnostic~-5debef3c-e9d7-4417-afd3-b573dcd0d2ad]: Assigning socketPath: \\?\pipe\C:\Users\Tejaswi\Desktop\Amazon-Clone\functions\12412
+[debug] [2021-01-18T12:50:20.451Z] DEBUG: [worker-~diagnostic~-5debef3c-e9d7-4417-afd3-b573dcd0d2ad]: BUSY
+[debug] [2021-01-18T12:50:20.615Z] DEBUG: [runtime-status] [12412] Functions runtime initialized. {"cwd":"C:\\Users\\Tejaswi\\Desktop\\Amazon-Clone\\functions","node_version":"14.15.3"}
+[debug] [2021-01-18T12:50:20.616Z] DEBUG: [runtime-status] [12412] Disabled runtime features: undefined
+[debug] [2021-01-18T12:50:20.619Z] DEBUG: [runtime-status] [12412] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.4.2","resolution":"C:\\Users\\Tejaswi\\Desktop\\Amazon-Clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2021-01-18T12:50:20.621Z] DEBUG: [runtime-status] [12412] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.13.0","resolution":"C:\\Users\\Tejaswi\\Desktop\\Amazon-Clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-01-18T12:50:20.622Z] DEBUG: [runtime-status] [12412] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.13.0","resolution":"C:\\Users\\Tejaswi\\Desktop\\Amazon-Clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-01-18T12:50:20.624Z] DEBUG: [runtime-status] [12412] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2021-01-18T12:50:20.624Z] DEBUG: [runtime-status] [12412] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.13.0","resolution":"C:\\Users\\Tejaswi\\Desktop\\Amazon-Clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-01-18T12:50:21.334Z] DEBUG: [runtime-status] [12412] Checked functions.config() {"config":{}}
+[debug] [2021-01-18T12:50:21.335Z] DEBUG: [runtime-status] [12412] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.13.0","resolution":"C:\\Users\\Tejaswi\\Desktop\\Amazon-Clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"}}
+[debug] [2021-01-18T12:50:21.337Z] DEBUG: [runtime-status] [12412] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.13.0","resolution":"C:\\Users\\Tejaswi\\Desktop\\Amazon-Clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-01-18T12:50:21.342Z] DEBUG: [runtime-status] [12412] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.4.2","resolution":"C:\\Users\\Tejaswi\\Desktop\\Amazon-Clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2021-01-18T12:50:21.344Z] DEBUG: [runtime-status] [12412] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.13.0","resolution":"C:\\Users\\Tejaswi\\Desktop\\Amazon-Clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-01-18T12:50:21.345Z] DEBUG: [runtime-status] [12412] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.4.2","resolution":"C:\\Users\\Tejaswi\\Desktop\\Amazon-Clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[warn] !  Error: Cannot find module 'C:\Users\Tejaswi\Desktop\Amazon-Clone\functions\functions\src\index.js'. Please verify that the package.json has a valid "main" entry
+    at tryPackage (internal/modules/cjs/loader.js:303:19)
+    at Function.Module._findPath (internal/modules/cjs/loader.js:516:18)
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:867:27)
+    at Function.Module._load (internal/modules/cjs/loader.js:725:27)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at initializeRuntime (C:\Users\Tejaswi\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:676:29)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async handleMessage (C:\Users\Tejaswi\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:714:20) {"metadata":{"emulator":{"name":"functions"},"message":"Error: Cannot find module 'C:\\Users\\Tejaswi\\Desktop\\Amazon-Clone\\functions\\functions\\src\\index.js'. Please verify that the package.json has a valid \"main\" entry\n    at tryPackage (internal/modules/cjs/loader.js:303:19)\n    at Function.Module._findPath (internal/modules/cjs/loader.js:516:18)\n    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:867:27)\n    at Function.Module._load (internal/modules/cjs/loader.js:725:27)\n    at Module.require (internal/modules/cjs/loader.js:952:19)\n    at require (internal/modules/cjs/helpers.js:88:18)\n    at initializeRuntime (C:\\Users\\Tejaswi\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:676:29)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async handleMessage (C:\\Users\\Tejaswi\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:714:20)"}}
+[warn] !  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this. {"metadata":{"emulator":{"name":"functions"}}}
+[debug] [2021-01-18T12:50:21.384Z] DEBUG: [worker-~diagnostic~-5debef3c-e9d7-4417-afd3-b573dcd0d2ad]: exited
+[debug] [2021-01-18T12:50:21.384Z] DEBUG: [worker-~diagnostic~-5debef3c-e9d7-4417-afd3-b573dcd0d2ad]: FINISHED
+[debug] [2021-01-20T14:25:01.776Z] ----------------------------------------------------------------------
+[debug] [2021-01-20T14:25:01.778Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Tejaswi\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-01-20T14:25:01.778Z] CLI Version:   9.2.1
+[debug] [2021-01-20T14:25:01.778Z] Platform:      win32
+[debug] [2021-01-20T14:25:01.778Z] Node Version:  v14.15.3
+[debug] [2021-01-20T14:25:01.779Z] Time:          Wed Jan 20 2021 19:55:01 GMT+0530 (India Standard Time)
+[debug] [2021-01-20T14:25:01.779Z] ----------------------------------------------------------------------
+[debug] [2021-01-20T14:25:01.780Z] 
+[debug] [2021-01-20T14:25:01.782Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2021-01-20T14:25:01.802Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-01-20T14:25:01.802Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Tejaswi\Desktop\Amazon-Clone
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[debug] [2021-01-20T14:25:03.380Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2021-01-20T14:25:03.381Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using my-app-develop. 
+[debug] [2021-01-20T14:25:08.715Z] > refreshing access token with scopes: []
+[debug] [2021-01-20T14:25:08.716Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-01-20T14:25:09.377Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Wed, 20 Jan 2021 14:25:07 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-20T14:25:09.578Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/my-app-develop [none]
+[debug] [2021-01-20T14:25:10.728Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/my-app-develop 200
+[debug] [2021-01-20T14:25:10.728Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/my-app-develop {"projectId":"my-app-develop","projectNumber":"936042821862","displayName":"My app develop","name":"projects/my-app-develop","resources":{"hostingSite":"my-app-develop"},"state":"ACTIVE"}
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2021-01-20T14:25:25.509Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2021-01-20T14:25:26.102Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2021-01-20T14:25:26.103Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"8.2.3","browserURL":"https://www.gstatic.com/firebasejs/8.2.3/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/8.2.3/firebase.tgz"},"live":{"version":"8.2","browserURL":"https://www.gstatic.com/firebasejs/live/8.2/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/8.2/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/8.2.3/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js","auth":"https://www.gstatic.com/firebasejs/8.2.3/firebase-auth.js","database":"https://www.gstatic.com/firebasejs/8.2.3/firebase-database.js","firestore":"https://www.gstatic.com/firebasejs/8.2.3/firebase-firestore.js","functions":"https://www.gstatic.com/firebasejs/8.2.3/firebase-functions.js","installations":"https://www.gstatic.com/firebasejs/8.2.3/firebase-installations.js","messaging":"https://www.gstatic.com/firebasejs/8.2.3/firebase-messaging.js","storage":"https://www.gstatic.com/firebasejs/8.2.3/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/8.2.3/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/8.2.3/firebase-remote-config.js","firestore.memory":"https://www.gstatic.com/firebasejs/8.2.3/firebase-firestore.memory.js"}}
+[info] +  Wrote build/index.html 
+[info] 
+[info] i  Detected a .git folder at C:\Users\Tejaswi 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=465806066&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2021-01-20T14:25:30.509Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"eef710a4935e47b0e227","redirect_uri":"http://localhost:9005","state":"465806066"}
+[debug] [2021-01-20T14:25:31.108Z] <<< HTTP RESPONSE 200 {"date":"Wed, 20 Jan 2021 14:25:29 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","server":"GitHub.com","status":"200 OK","vary":"X-PJAX, Accept-Encoding, Accept, X-Requested-With, Accept-Encoding","etag":"W/\"c227ada22a20f25d31e90e9afdaa20b6\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; connect-src 'self' uploads.github.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; frame-src render.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com *.githubusercontent.com; manifest-src 'self'; media-src 'none'; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/socket-worker-5029ae85.js gist.github.com/socket-worker-5029ae85.js","x-github-request-id":"A7F1:1077:A276C:B2EF8:60083D59"}
+[debug] [2021-01-20T14:25:31.110Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2021-01-20T14:25:32.044Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2021-01-20T14:25:32.045Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"TEJASWI-TEJASWI","id":51693652,"node_id":"MDQ6VXNlcjUxNjkzNjUy","avatar_url":"https://avatars2.githubusercontent.com/u/51693652?v=4","gravatar_id":"","url":"https://api.github.com/users/TEJASWI-TEJASWI","html_url":"https://github.com/TEJASWI-TEJASWI","followers_url":"https://api.github.com/users/TEJASWI-TEJASWI/followers","following_url":"https://api.github.com/users/TEJASWI-TEJASWI/following{/other_user}","gists_url":"https://api.github.com/users/TEJASWI-TEJASWI/gists{/gist_id}","starred_url":"https://api.github.com/users/TEJASWI-TEJASWI/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/TEJASWI-TEJASWI/subscriptions","organizations_url":"https://api.github.com/users/TEJASWI-TEJASWI/orgs","repos_url":"https://api.github.com/users/TEJASWI-TEJASWI/repos","events_url":"https://api.github.com/users/TEJASWI-TEJASWI/events{/privacy}","received_events_url":"https://api.github.com/users/TEJASWI-TEJASWI/received_events","type":"User","site_admin":false,"name":"Tejaswi","company":"IIT Jammu","blog":"","location":"Jammu","email":null,"hireable":null,"bio":"I have strong interpersonal skills, sincerity and ability to work hard. I enjoy being challenged to work on projects that require creative thinking . ","twitter_username":"TEJASWITEJAS1","public_repos":27,"public_gists":1,"followers":2,"following":1,"created_at":"2019-06-11T06:24:43Z","updated_at":"2021-01-12T11:50:23Z","private_gists":0,"total_private_repos":0,"owned_private_repos":0,"disk_usage":3549,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"pro","space":976562499,"collaborators":0,"private_repos":9999}}
+[info] 
+[info] +  Success! Logged into GitHub as TEJASWI-TEJASWI 
+[info] 
+[debug] [2021-01-20T15:16:00.057Z] >>> [apiv2][query] GET https://api.github.com/repos/TEJASWI-TEJASWI/Amazon-Prime/actions/secrets/public-key type=owner
+[debug] [2021-01-20T15:16:01.069Z] <<< [apiv2][status] GET https://api.github.com/repos/TEJASWI-TEJASWI/Amazon-Prime/actions/secrets/public-key 404
+[debug] [2021-01-20T15:16:01.069Z] <<< [apiv2][body] GET https://api.github.com/repos/TEJASWI-TEJASWI/Amazon-Prime/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2021-01-20T15:16:40.807Z] >>> [apiv2][query] GET https://api.github.com/repos/TEJASWI-TEJASWI/Amazon-Clone/actions/secrets/public-key type=owner
+[debug] [2021-01-20T15:16:42.001Z] <<< [apiv2][status] GET https://api.github.com/repos/TEJASWI-TEJASWI/Amazon-Clone/actions/secrets/public-key 200
+[debug] [2021-01-20T15:16:42.002Z] <<< [apiv2][body] GET https://api.github.com/repos/TEJASWI-TEJASWI/Amazon-Clone/actions/secrets/public-key {"key_id":"568250167242549743","key":"hwCb0Tntb6Dx9TvQBSctdQKmoU8FvoMMOLc7A+U97Cw="}
+[debug] [2021-01-20T15:16:42.009Z] >>> [apiv2][query] GET https://api.github.com/repos/TEJASWI-TEJASWI/Amazon-Clone [none]
+[debug] [2021-01-20T15:16:43.319Z] <<< [apiv2][status] GET https://api.github.com/repos/TEJASWI-TEJASWI/Amazon-Clone 200
+[debug] [2021-01-20T15:16:43.320Z] <<< [apiv2][body] GET https://api.github.com/repos/TEJASWI-TEJASWI/Amazon-Clone {"id":328971253,"node_id":"MDEwOlJlcG9zaXRvcnkzMjg5NzEyNTM=","name":"Amazon-Clone","full_name":"TEJASWI-TEJASWI/Amazon-Clone","private":false,"owner":{"login":"TEJASWI-TEJASWI","id":51693652,"node_id":"MDQ6VXNlcjUxNjkzNjUy","avatar_url":"https://avatars2.githubusercontent.com/u/51693652?v=4","gravatar_id":"","url":"https://api.github.com/users/TEJASWI-TEJASWI","html_url":"https://github.com/TEJASWI-TEJASWI","followers_url":"https://api.github.com/users/TEJASWI-TEJASWI/followers","following_url":"https://api.github.com/users/TEJASWI-TEJASWI/following{/other_user}","gists_url":"https://api.github.com/users/TEJASWI-TEJASWI/gists{/gist_id}","starred_url":"https://api.github.com/users/TEJASWI-TEJASWI/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/TEJASWI-TEJASWI/subscriptions","organizations_url":"https://api.github.com/users/TEJASWI-TEJASWI/orgs","repos_url":"https://api.github.com/users/TEJASWI-TEJASWI/repos","events_url":"https://api.github.com/users/TEJASWI-TEJASWI/events{/privacy}","received_events_url":"https://api.github.com/users/TEJASWI-TEJASWI/received_events","type":"User","site_admin":false},"html_url":"https://github.com/TEJASWI-TEJASWI/Amazon-Clone","description":null,"fork":false,"url":"https://api.github.com/repos/TEJASWI-TEJASWI/Amazon-Clone","forks_url":"https://api.github.com/repos/TEJASWI-TEJASWI/Amazon-Clone/forks","keys_url":"https://api.github.com/repos/TEJASWI-TEJASWI/Amazon-Clone/keys{/key_id}","collaborators_url":"https://api.github.com/repos/TEJASWI-TEJASWI/Amazon-Clone/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/TEJASWI-TEJASWI/Amazon-Clone/teams","hooks_url":"https://api.github.com/repos/TEJASWI-TEJASWI/Amazon-Clone/hooks","issue_events_url":"https://api.github.com/repos/TEJASWI-TEJASWI/Amazon-Clone/issues/events{/number}","events_url":"https://api.github.com/repos/TEJASWI-TEJASWI/Amazon-Clone/events","assignees_url":"https://api.github.com/repos/TEJASWI-TEJASWI/Amazon-Clone/assignees{/user}","branches_url":"https://api.github.com/repos/TEJASWI-TEJASWI/Amazon-Clone/branches{/branch}","tags_url":"https://api.github.com/repos/TEJASWI-TEJASWI/Amazon-Clone/tags","blobs_url":"https://api.github.com/repos/TEJASWI-TEJASWI/Amazon-Clone/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/TEJASWI-TEJASWI/Amazon-Clone/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/TEJASWI-TEJASWI/Amazon-Clone/git/refs{/sha}","trees_url":"https://api.github.com/repos/TEJASWI-TEJASWI/Amazon-Clone/git/trees{/sha}","statuses_url":"https://api.github.com/repos/TEJASWI-TEJASWI/Amazon-Clone/statuses/{sha}","languages_url":"https://api.github.com/repos/TEJASWI-TEJASWI/Amazon-Clone/languages","stargazers_url":"https://api.github.com/repos/TEJASWI-TEJASWI/Amazon-Clone/stargazers","contributors_url":"https://api.github.com/repos/TEJASWI-TEJASWI/Amazon-Clone/contributors","subscribers_url":"https://api.github.com/repos/TEJASWI-TEJASWI/Amazon-Clone/subscribers","subscription_url":"https://api.github.com/repos/TEJASWI-TEJASWI/Amazon-Clone/subscription","commits_url":"https://api.github.com/repos/TEJASWI-TEJASWI/Amazon-Clone/commits{/sha}","git_commits_url":"https://api.github.com/repos/TEJASWI-TEJASWI/Amazon-Clone/git/commits{/sha}","comments_url":"https://api.github.com/repos/TEJASWI-TEJASWI/Amazon-Clone/comments{/number}","issue_comment_url":"https://api.github.com/repos/TEJASWI-TEJASWI/Amazon-Clone/issues/comments{/number}","contents_url":"https://api.github.com/repos/TEJASWI-TEJASWI/Amazon-Clone/contents/{+path}","compare_url":"https://api.github.com/repos/TEJASWI-TEJASWI/Amazon-Clone/compare/{base}...{head}","merges_url":"https://api.github.com/repos/TEJASWI-TEJASWI/Amazon-Clone/merges","archive_url":"https://api.github.com/repos/TEJASWI-TEJASWI/Amazon-Clone/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/TEJASWI-TEJASWI/Amazon-Clone/downloads","issues_url":"https://api.github.com/repos/TEJASWI-TEJASWI/Amazon-Clone/issues{/number}","pulls_url":"https://api.github.com/repos/TEJASWI-TEJASWI/Amazon-Clone/pulls{/number}","milestones_url":"https://api.github.com/repos/TEJASWI-TEJASWI/Amazon-Clone/milestones{/number}","notifications_url":"https://api.github.com/repos/TEJASWI-TEJASWI/Amazon-Clone/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/TEJASWI-TEJASWI/Amazon-Clone/labels{/name}","releases_url":"https://api.github.com/repos/TEJASWI-TEJASWI/Amazon-Clone/releases{/id}","deployments_url":"https://api.github.com/repos/TEJASWI-TEJASWI/Amazon-Clone/deployments","created_at":"2021-01-12T11:52:55Z","updated_at":"2021-01-18T11:19:57Z","pushed_at":"2021-01-18T11:19:54Z","git_url":"git://github.com/TEJASWI-TEJASWI/Amazon-Clone.git","ssh_url":"git@github.com:TEJASWI-TEJASWI/Amazon-Clone.git","clone_url":"https://github.com/TEJASWI-TEJASWI/Amazon-Clone.git","svn_url":"https://github.com/TEJASWI-TEJASWI/Amazon-Clone","homepage":null,"size":1,"stargazers_count":0,"watchers_count":0,"language":null,"has_issues":true,"has_projects":true,"has_downloads":true,"has_wiki":true,"has_pages":false,"forks_count":0,"mirror_url":null,"archived":false,"disabled":false,"open_issues_count":0,"license":null,"forks":0,"open_issues":0,"watchers":0,"default_branch":"main","permissions":{"admin":true,"push":true,"pull":true},"temp_clone_token":"","allow_squash_merge":true,"allow_merge_commit":true,"allow_rebase_merge":true,"delete_branch_on_merge":false,"network_count":0,"subscribers_count":1}
+[debug] [2021-01-20T15:16:43.328Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-01-20T15:16:43.328Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-01-20T15:16:45.708Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Wed, 20 Jan 2021 15:16:44 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-20T15:16:45.769Z] >>> HTTP REQUEST POST https://iam.googleapis.com/v1/projects/my-app-develop/serviceAccounts  
+ {"accountId":"github-action-328971253","serviceAccount":{"displayName":"GitHub Actions (TEJASWI-TEJASWI/Amazon-Clone)","description":"A service account with permission to deploy to Firebase Hosting for the GitHub repository TEJASWI-TEJASWI/Amazon-Clone"}}
+[debug] [2021-01-20T15:17:04.314Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 20 Jan 2021 15:17:02 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-20T15:17:04.318Z] >>> HTTP REQUEST GET https://iam.googleapis.com/v1/projects/my-app-develop/serviceAccounts/github-action-328971253@my-app-develop.iam.gserviceaccount.com  
+ 
+[debug] [2021-01-20T15:17:04.320Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/my-app-develop:getIamPolicy  
+ 
+[debug] [2021-01-20T15:17:07.835Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 20 Jan 2021 15:17:06 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-20T15:17:07.838Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 20 Jan 2021 15:17:06 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1573","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-20T15:17:07.841Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/my-app-develop:setIamPolicy  
+ {"policy":{"version":1,"etag":"BwW5FflCVeI=","bindings":[{"role":"roles/firebase.managementServiceAgent","members":["serviceAccount:firebase-service-account@firebase-sa-management.iam.gserviceaccount.com"]},{"role":"roles/firebase.sdkAdminServiceAgent","members":["serviceAccount:firebase-adminsdk-pzmw6@my-app-develop.iam.gserviceaccount.com"]},{"role":"roles/firebaseauth.admin","members":["serviceAccount:firebase-adminsdk-pzmw6@my-app-develop.iam.gserviceaccount.com","serviceAccount:github-action-328971253@my-app-develop.iam.gserviceaccount.com"]},{"role":"roles/firebaserules.system","members":["serviceAccount:service-936042821862@firebase-rules.iam.gserviceaccount.com"]},{"role":"roles/iam.serviceAccountTokenCreator","members":["serviceAccount:firebase-adminsdk-pzmw6@my-app-develop.iam.gserviceaccount.com"]},{"role":"roles/owner","members":["user:2018ucs0090@iitjammu.ac.in"]},{"role":"roles/serviceusage.apiKeysViewer","members":["serviceAccount:github-action-328971253@my-app-develop.iam.gserviceaccount.com"]},{"role":"roles/firebasehosting.admin","members":["serviceAccount:github-action-328971253@my-app-develop.iam.gserviceaccount.com"]},{"role":"roles/run.viewer","members":["serviceAccount:github-action-328971253@my-app-develop.iam.gserviceaccount.com"]}]},"updateMask":"bindings"}
+[debug] [2021-01-20T15:17:31.489Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 20 Jan 2021 15:17:30 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=2060","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-20T15:17:31.491Z] >>> HTTP REQUEST POST https://iam.googleapis.com/v1/projects/my-app-develop/serviceAccounts/github-action-328971253@my-app-develop.iam.gserviceaccount.com/keys  
+ {"keyAlgorithm":"KEY_ALG_UNSPECIFIED","privateKeyType":"TYPE_GOOGLE_CREDENTIALS_FILE"}
+[debug] [2021-01-20T15:18:03.216Z] Error: socket hang up
+    at connResetException (internal/errors.js:607:14)
+    at TLSSocket.socketOnEnd (_http_client.js:493:23)
+    at TLSSocket.emit (events.js:327:22)
+    at TLSSocket.EventEmitter.emit (domain.js:467:12)
+    at endReadableNT (internal/streams/readable.js:1327:12)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21)
+[error] 
+[error] Error: Server Error. socket hang up
+[debug] [2021-01-20T15:19:08.598Z] ----------------------------------------------------------------------
+[debug] [2021-01-20T15:19:08.600Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Tejaswi\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-01-20T15:19:08.601Z] CLI Version:   9.2.1
+[debug] [2021-01-20T15:19:08.601Z] Platform:      win32
+[debug] [2021-01-20T15:19:08.601Z] Node Version:  v14.15.3
+[debug] [2021-01-20T15:19:08.602Z] Time:          Wed Jan 20 2021 20:49:08 GMT+0530 (India Standard Time)
+[debug] [2021-01-20T15:19:08.602Z] ----------------------------------------------------------------------
+[debug] [2021-01-20T15:19:08.602Z] 
+[debug] [2021-01-20T15:19:08.607Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-01-20T15:19:08.608Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Tejaswi\Desktop\Amazon-Clone
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using my-app-develop. 
+[debug] [2021-01-20T15:19:13.309Z] > refreshing access token with scopes: []
+[debug] [2021-01-20T15:19:13.309Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-01-20T15:19:14.545Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Wed, 20 Jan 2021 15:19:13 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-20T15:19:14.638Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/my-app-develop [none]
+[debug] [2021-01-20T15:19:35.940Z] Failed to make request to https://firebase.googleapis.com/v1beta1/projects/my-app-develop
+[debug] [2021-01-20T15:19:36.611Z] FirebaseError: Failed to make request to https://firebase.googleapis.com/v1beta1/projects/my-app-develop
+    at Client.doRequest (C:\Users\Tejaswi\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:193:19)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Client.request (C:\Users\Tejaswi\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:93:20)
+    at async Object.getFirebaseProject (C:\Users\Tejaswi\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:289:21)
+    at async Object.doSetup [as project] (C:\Users\Tejaswi\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:77:27)
+    at async init (C:\Users\Tejaswi\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:19:9)
+[error] 
+[error] Error: Failed to get Firebase project my-app-develop. Please make sure the project exists and your account has permission to access it.

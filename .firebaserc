@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "my-app-develop"
+  },
+  "targets": {
+    "my-app-develop": {
+      "hosting": {
+        "english": [
+          "my-app-develop"
+        ]
+      }
+    }
+  }
+}
